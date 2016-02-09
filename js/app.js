@@ -4,8 +4,23 @@
       document.getElementById('main').style.display = 'none';
       return;
     }
+    var toTop = document.getElementById('to-top');
+    toTop.addEventListener('click', function(e){
+        e.preventDefault();
+        scrollToTop(650);
+    });
 
     lazyLoad();
+
+    function scrollToTop(scrollDuration) {
+        var scrollStep = -window.scrollY / (scrollDuration / 15),
+            scrollInterval = setInterval(function(){
+            if ( window.scrollY != 0 ) {
+                window.scrollBy( 0, scrollStep );
+            }
+            else clearInterval(scrollInterval); 
+        },15);
+    } 
 
     function lazyLoad() {
     /* lazyload.js (c) Lorenzo Giuliani
@@ -48,8 +63,11 @@
                 });
               }
             };
+            if(window.scrollY > 200)
+                toTop.style.display = '';
+            else
+                toTop.style.display = 'none';
           };
-        // Array.prototype.slice.call is not callable under our lovely IE8
       for (var i = 0; i < query.length; i++) {
         images.push(query[i]);
       };

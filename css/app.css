@@ -10,14 +10,21 @@ header > section {
     text-align: center;
 }
 
-nav > ul > li {
+.contact-list > li {
     display: inline-block;
     padding: 0 15px;
     border-right: 1px solid #a0a0a0;
 }
 
-nav > ul > li:last-child {
+.contact-list > li:last-child {
     border: 0 none;
+}
+
+footer {
+    text-align: center;
+    padding: 50px 0;
+    background: #f4f4f4;
+    border-top: 1px solid #e1e1e1;
 }
 
 img {
@@ -51,4 +58,17 @@ img {
 #old-browser-heading {
     display: none;
     color: red;
+}
+
+#main {
+    text-align: center;
+}
+
+#main article {
+    padding: 75px 0;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+#main article:last-child {
+    border: 0 none;
 }
