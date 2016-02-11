@@ -42,6 +42,12 @@ img {
    opacity: 1; 
 }
 
+.brand {
+   background: transparent url('../img/branding.png') no-repeat center; 
+   background-size: contain;
+   height: 324px;
+}
+
 #to-top {
     position: fixed;
     bottom: .5em;
@@ -71,4 +77,10 @@ img {
 
 #main article:last-child {
     border: 0 none;
+}
+
+@media (min-width:601px) {
+    .brand {
+        margin: 20px 0;
+    }
 }

@@ -55,14 +55,15 @@
 
       var images = new Array(),
           query = document.querySelectorAll('img.lazy'),
-          processScroll = function() {
+          processScroll = function(e) {
             for (var i = 0; i < images.length; i++) {
               if (elementInViewport(images[i])) {
                 loadImage(images[i], function () {
                   images.splice(i, i);
                 });
               }
-            };
+            }
+
             if(window.scrollY > 200)
                 toTop.style.display = '';
             else
@@ -71,7 +72,8 @@
       for (var i = 0; i < query.length; i++) {
         images.push(query[i]);
       };
+
       processScroll();
-      addEventListener('scroll',processScroll);
+      window.addEventListener('scroll',processScroll);
     }
 }());
