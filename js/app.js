@@ -75,5 +75,8 @@
 
       processScroll();
       window.addEventListener('scroll',processScroll);
+      window.addEventListener('unload', function(){ 
+          window.scrollTo(0,0);
+      });
     }
 }());
