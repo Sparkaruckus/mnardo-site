@@ -1,7 +1,7 @@
  (function() {
     if(!document.querySelectorAll || !window.addEventListener) {
       document.getElementById('old-browser-heading').style.display = 'block';
-      document.getElementById('main').style.display = 'none';
+      document.getElementById('site-main').style.display = 'none';
       return;
     }
     var toTop = document.getElementById('to-top');
