@@ -35,11 +35,11 @@ img {
 }
 
 .lazy.loaded {
-   opacity: 1; 
+   opacity: 1;
 }
 
 .brand {
-   background: transparent url('../img/branding.png') no-repeat center; 
+   background: transparent url('../img/branding.png') no-repeat center;
    background-size: contain;
    height: 200px;
 }
@@ -93,6 +93,11 @@ img {
     border: 0 none;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
 @media (min-width:391px) {
     .brand {
         height: 250px;
@@ -124,5 +129,11 @@ img {
 @media (min-width: 1200px) {
     nav {
         font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        width: 1400px;
     }
 }
