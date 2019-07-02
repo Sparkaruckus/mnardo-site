@@ -179,7 +179,7 @@ h2 {
     text-align: center;
     font-family: 'Roboto Slab', serif;
     font-size: 1.5rem;
-    color: #fff;
+    color: #454C4C;
 }
 
 /*  About Section */
@@ -281,10 +281,16 @@ h2 {
         font-size: 3rem;
         margin-top: 6%;
     }
+
     .button {
         width: 35%;
         margin: 2%;
 
+    }
+
+    .construction-text > p {
+        color: #fff;
+    }
 }
 
 @media (min-width: 1025px){
@@ -397,4 +403,8 @@ h2 {
     .grid-item > img {
         width: 35%;
     }
-}}
+
+    .construction-text > p {
+        color: #fff;
+    }
+}
