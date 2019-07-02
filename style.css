@@ -6,13 +6,14 @@ body {
     background-image: url('img/lpbkgrd.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    height: 200vh;
 }
 
 .about-bkgrd-img {
     background-image: url('img/lpbkgrd.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 175vh;
+    height: 200vh;
 }
 
 /* NAV */
@@ -255,6 +256,10 @@ h2 {
     }
 
     body {
+        height: 100vh;
+    }
+
+    .home-bkgrd-img {
         height: 100vh;
     }
 
