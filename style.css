@@ -1,21 +1,31 @@
 body {
+    margin: 0;
+}
+
+.home-bkgrd-img {
     background-image: url('img/lpbkgrd.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0;
+}
+
+.about-bkgrd-img {
+    background-image: url('img/lpbkgrd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 175vh;
 }
 
 /* NAV */
 
-.icon-mustache4 {
+svg {
     fill: #454C4C;
     transition: .5s;
     margin-right: 0;
+    width: 2em;
   }
 
-.icon-mustache4:hover {
-    color: #FFE14D;
+svg:hover {
+    fill: #FFE14D;
 }
 
 .sticky {
@@ -64,7 +74,8 @@ a:hover {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 20%;
+    margin: 20% 10%;
+    padding: 5%;
     border: 3px solid #FFE14D;
 }
 
@@ -130,7 +141,7 @@ img:hover {
     100%{transform: rotate(0deg);}
 }
 
-img:hover {
+.rocking-stache:hover {
     -webkit-transform-origin: 50% 0;
     transform-origin: 50% 0;
     -webkit-animation: rock 1s ease-in-out;
@@ -154,10 +165,67 @@ h2 {
     margin-top: 10%;
 }
 
+/*  About Section */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.selfie-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selfie {
+    width: 75vw;
+    margin: 20% 5%;
+}
+
+.about-text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+
+.about-text > p {
+    color: white;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(128, 128, 128, 0.75);
+    width: 75vw;
+    margin: 0 12%;
+    padding: 5%;
+}
+
+/* .personal-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+.personal-container > p {
+    color: white;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(128, 128, 128, 0.75);
+    width: 75vw;
+    margin: 0 12%;
+    padding: 5%;
+} */
+
 @media (min-width: 768px){
 
     body {
         height: 100vh;
+    }
+
+    .about-bkgrd-img {
+        height: 150vh;
     }
 
     h1 {
@@ -175,19 +243,29 @@ h2 {
 
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1025px){
 
     .overflow-hidden {
         overflow-y: hidden;
     }
 
-    .icon-mustache4 {
+    svg {
         width: 4em;
         height: auto;
     }
 
     body {
         height: 100vh;
+    }
+
+    .about-bkgrd-img {
+        height: 100vh;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
     }
 
     .main-nav {
@@ -212,5 +290,30 @@ h2 {
     .button {
         width: 35%;
         margin: 1%;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+    }
+
+    .selfie {
+        width: 40vw;
+        margin-left: 25%;
+    }
+
+    .about-text {
+        display: flex;
+        align-items: center;
+        margin: 0 0;
+    }
+
+    .about-text > p {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        height: 50vh;
+        padding: 2% 5%;
     }
 }}
