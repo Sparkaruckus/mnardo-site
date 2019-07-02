@@ -4,9 +4,7 @@
 }
 
 html {
-    background: url('img/lpbkgrd.jpg') no-repeat center center fixed; 
-    background-position-y: 20%;
-    background-size: cover;
+    background: #fff;
 }
 body {
     margin: 0;
@@ -264,6 +262,12 @@ h2 {
 
 @media (min-width: 768px){
 
+    html {
+        background: url('img/lpbkgrd.jpg') no-repeat center center fixed; 
+        background-position-y: 20%;
+        background-size: cover;
+    }
+
     body {
         height: 100vh;
     }
@@ -284,6 +288,12 @@ h2 {
 }
 
 @media (min-width: 1025px){
+
+    html {
+        background: url('img/lpbkgrd.jpg') no-repeat center center fixed; 
+        background-position-y: 20%;
+        background-size: cover;
+    }
 
     .overflow-hidden {
         overflow-y: hidden;
