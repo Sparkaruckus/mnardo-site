@@ -341,7 +341,7 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 50px;
+    margin: 5px;
 }
 
 .insult {
