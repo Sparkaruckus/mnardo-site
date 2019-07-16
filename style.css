@@ -290,6 +290,7 @@ h2 {
   .modal-window:target {
     opacity: 1;
     pointer-events: auto;
+    overflow: auto;
   }
   
   .modal-window>div {
