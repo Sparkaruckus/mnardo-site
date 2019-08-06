@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Insult Generator</title>
+</head>
+<body class="animated fadeIn">
+    <div class="app-return animated bounceInDown">
+        <a href="/Code.html">
+            <svg id="Layer_1" data="/apps/keyboard/img/mustache4.svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 675.45 173.41"><defs></defs><title>Back to Apps</title><path class="cls-1" d="M520.64,173.38c-63.42-1.46-121.29-19.5-172.31-58-10.36-7.82-10.36-7.79-20.58-.25-46.13,34-97.54,53.37-155,57.18-38.07,2.52-74.84-2.44-110.26-16.26-24.05-9.38-44.1-23.83-55.37-48.27C-9,72.86,3,31.77,34.78,14.14c10.88-6,22.6-9,35.18-6.82,12.73,2.17,21,9.94,26.6,21.16.85,1.72,2.46,3.85.08,5.54s-4.07-.05-5.8-1.65c-11.65-10.8-25.68-11.26-37.53-1.61C38.52,42.81,39,74.56,60.63,82.43c6.45,2.35,12.59,1.21,18.81,0C94,79.53,107,72.93,119.55,65.28,143.41,50.74,165.83,34,190.16,20.15,213,7.19,237.25-.6,263.55,0s51.08,6.07,71.1,24.74c2.73,2.54,4.36,1.64,6.5-.37C359,7.72,381.18,2.65,404.6.54c32.94-3,61.86,8.14,89.44,24.6,23,13.74,44.27,30.27,67.63,43.52,12.84,7.28,26.2,12.7,41,14.77,10.07,1.42,17.93-2.17,23.83-9.53,9.8-12.23,9.14-39.13-11.82-47.65-10.57-4.29-20.59-2.86-29.23,5.18-1.83,1.7-3.57,4.79-6.51,2.52s-.3-4.83.79-7c8.46-16.74,25-23.57,45.33-18.87,27.77,6.42,49.62,33.56,50.34,62.53.88,35-15.33,60.18-45.17,77.14-23,13.07-48.21,19.38-74.2,23A260.32,260.32,0,0,1,520.64,173.38Z" transform="translate(0.02 0.03)"/></svg>
+        </a>
+    </div>
+
+    <div class="insult-body">
+        <h1>Old-Fashioned Insult Generator</h1>
+        <hr>
+        <div>
+        <button class="button" id="removeInsult" onclick="displayInsult()">Insult</button>
+            <button class="button two" id="define" onclick="defineInsult()">Definition</button>
+        <button class="button" onclick="removeInsult()">Clear</button>
+        </div>
+        <hr>
+        <div id = "insult">
+        </div>
+        <div id = "definition">
+        </div>
+    </div>
+<script src="js/scripts.js"></script>
+</body>
+</html>

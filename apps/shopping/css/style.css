@@ -1,0 +1,81 @@
+.list-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+  }
+  
+  h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #272727;
+  }
+  
+  .add-section {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  #userinput {
+    padding: 10px 15px;
+  }
+  
+  .buttonStyle {
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+    background: #5fab42;
+    border: none;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    list-style: none;
+  }
+  
+  li > button {
+    opacity: 0;
+    font-size: 2rem;
+    margin: 0 0 0 10px;
+    color: #e74d4d;
+    border: none;
+    background: none;
+  }
+  
+  li:hover button {
+    opacity: 1;
+  }
+  
+  .done {
+    text-decoration: line-through;
+  }
+
+/* Moustache Return*/
+
+.app-return {
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+svg {
+    fill: #454C4C;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin-right: 0;
+    width: 5rem;
+  }
+
+svg:hover {
+    fill: #f3d43c;
+}

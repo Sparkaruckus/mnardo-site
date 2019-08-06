@@ -1,0 +1,121 @@
+body {
+    background: #0f0f0f;
+  }
+  
+  .logos {
+    display: flex;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .left {
+    position: relative;
+    top: 50%;
+  }
+  
+  .btn {
+    font-size: 4rem;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: #ffe360;
+    background: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .right {
+    position: relative;
+    top: 50%;
+  }
+  
+  .arrows {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 50%;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  form {
+    display: inline;
+  }
+  
+  .button {
+    padding: 10px 25px;
+    font-family: Arial;
+    font-size: 1em;
+    outline: none;
+    color: #0a0a0a;
+    background-color: #ffe360;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px #16a6cc;
+  }
+  
+  .button:hover {
+    background: #ffd851;
+    cursor: pointer;
+  }
+  
+  .button:active {
+    box-shadow: 3px 3px #0685a7;
+    transform: translate(2px, 2px);
+  }
+  
+  div {
+    margin: 25px 50px;
+  }
+  
+  .mySlides {
+    display:none;
+  }
+
+  /* Moustache Return*/
+
+.app-return {
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+svg {
+    fill: #454C4C;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin-right: 0;
+    width: 5rem;
+  }
+
+svg:hover {
+    fill: #f3d43c;
+}
+  
+  
