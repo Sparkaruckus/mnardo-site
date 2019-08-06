@@ -4,11 +4,15 @@
 }
 
 html {
-    background: #fff;
     scroll-behavior: smooth;
 }
 body {
     margin: 0;
+    background: #fff;
+}
+
+.white-bkgrd {
+    background: #f5f5f5;
 }
 
 img {
@@ -86,7 +90,7 @@ svg {
   }
 
 svg:hover {
-    fill: #FFE14D;
+    fill: #f3d43c;
 }
 nav {
     position: -webkit-sticky;
@@ -129,7 +133,7 @@ a {
 }
 
 a:hover {
-    color: #FFE14D;
+    color: #f3d43c;
 }
 
 .content {
@@ -148,7 +152,7 @@ a:hover {
             align-items: center;
     margin: 25px 20px;
     padding: 5%;
-    border: 3px solid #FFE14D;
+    border: 3px solid #f3d43c;
 }
 
 .sm-mustache {
@@ -200,6 +204,13 @@ h2 {
     text-align: center;
     font-family: 'Roboto Slab', serif;
     font-size: 2rem;
+    color: #454C4C;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
     color: #454C4C;
 }
 
@@ -315,32 +326,43 @@ h2 {
 /* CODE SECTION */
 
 .code {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 50px 5px;
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px 50px;
+    margin: 50px;
 }
 
 .code-container {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100%;
 }
 
+.keyboard-icon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.keyboard-icon > a {
+    font-size: 6rem;
+}
 /* Responsive Design*/
 
 @media (min-width: 768px){
 
-    html {
+    body {
+        height: 100%;
         background: url('img/lpbkgrd.jpg') no-repeat center center fixed; 
         background-position-y: 20%;
         background-size: cover;
     }
 
-    body {
-        height: 100%;
+    .white-bkgrd {
+        background: #f5f5f5;
     }
 
     h1 {
@@ -366,19 +388,13 @@ h2 {
         width: 30%
     }
 
-    .image-container {
+    .image-container, code {
         grid-template-rows: repeat(auto, 1fr);
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 1025px){
-
-    html {
-        background: url('img/lpbkgrd.jpg') no-repeat center center fixed; 
-        background-position-y: 20%;
-        background-size: cover;
-    }
 
     .overflow-hidden {
         overflow-y: hidden;
@@ -391,6 +407,13 @@ h2 {
 
     body {
         height: 100%;
+        background: url('img/lpbkgrd.jpg') no-repeat center center fixed; 
+        background-position-y: 20%;
+        background-size: cover;
+    }
+
+    .white-bkgrd {
+        background: #f5f5f5;
     }
 
     .main-nav {
@@ -403,6 +426,10 @@ h2 {
 
     h1 {
         font-size: 5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
     }
 
     .content {
@@ -469,9 +496,13 @@ h2 {
         width: 30%;
     }
 
-    .image-container {
+    .image-container, code {
         grid-template-rows: repeat(auto, 1fr);
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .keyboard-icon > a {
+        font-size: 4rem;
     }
 
 }
