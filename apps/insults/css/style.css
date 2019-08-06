@@ -12,6 +12,12 @@ h1 {
     align-items: center;
   }
 
+  .button-position {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   
   .button {
     width: 200px;
@@ -112,5 +118,11 @@ svg:hover {
     #definition {
       font-size: 250%;
       color: darkslategray;
+    }
+
+    .button-position {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
     }
   }
