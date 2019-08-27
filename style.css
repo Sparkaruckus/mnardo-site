@@ -221,21 +221,23 @@ h3 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 25px;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .selfie-img {
     width: 75%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
 }
 
 .about-text {
@@ -246,6 +248,7 @@ h3 {
     -ms-flex-pack: center;
     justify-content: center;
     width: 75%;
+    margin: 50px;
 }
 
 .about-text > p {
@@ -450,13 +453,12 @@ h3 {
         display: flex;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-                align-items: center;
-        margin-top: 100px;
+        -ms-flex-pack: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .about-text > p {
