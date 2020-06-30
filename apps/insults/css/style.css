@@ -1,0 +1,128 @@
+h1 {
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    color: darkslategray;
+  }
+  
+  .insult-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-position {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  
+  .button {
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    font-family: 'Parisienne', cursive;
+    font-size: 25px;
+    color: #fff;
+    background-color: darkgoldenrod;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .two {
+    display: none;
+  }
+  
+  .button:hover {
+    background-color: goldenrod;
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active {
+    -moz-box-shadow:    inset 0 0 4px #000000;
+    -webkit-box-shadow: inset 0 0 4px #000000;
+    box-shadow:         inset 0 0 4px #272727;
+  }
+  
+  div {
+    margin: 2%;
+  }
+  
+  hr{
+      width: 75%;
+      height: 4px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: gold;
+      border: 0 none;
+      margin-top: 30px;
+      margin-bottom:30px;
+  }
+  
+  #insult {
+    font-family: 'Parisienne', cursive;
+    font-size: 300%;
+    color: #956c08;
+    text-align: center;
+  }
+  
+  #definition {
+    font-family: 'Roboto Slab', serif;
+    font-size: 150%;
+    color: darkslategray;
+    text-align: center;
+  }
+
+  /* Moustache Return*/
+
+.app-return {
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+svg {
+    fill: #454C4C;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin-right: 0;
+    width: 5rem;
+  }
+
+svg:hover {
+    fill: #f3d43c;
+}
+  
+  @media (min-width: 768px){
+    div {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    #insult {
+      font-size: 500%;
+      color: #956c08;
+    }
+    
+    #definition {
+      font-size: 250%;
+      color: darkslategray;
+    }
+
+    .button-position {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+  }

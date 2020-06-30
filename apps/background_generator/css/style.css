@@ -1,0 +1,57 @@
+body {
+	font: 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+	  background: linear-gradient(to right, red , yellow); /* Standard syntax */
+}
+
+h1 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+}
+
+h2 {
+	font: 900 2em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+
+}
+
+input {
+  border: none;
+}
+
+/* Moustache Return*/
+
+.app-return {
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+svg {
+    fill: #454C4C;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin-right: 0;
+    width: 5rem;
+  }
+
+svg:hover {
+    fill: #f3d43c;
+}
